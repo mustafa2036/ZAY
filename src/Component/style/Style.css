@@ -1,0 +1,429 @@
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #59AA6C;
+}
+
+.navbar {
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+.navbar .navbar-brand img {
+  width: 50%;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #59AA6C;
+}
+
+.navbar .navbar-nav i.fa-search, .navbar .navbar-nav i.fa-user, .navbar .navbar-nav i.fa-cart-shopping {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.navbar .navbar-nav .nav-links {
+  color: #cfd6e1;
+  font-size: .8rem;
+}
+
+.navbar .navbar-nav .nav-icons {
+  font-size: .8rem;
+  color: #cfd6e1;
+}
+
+.navbar .navbar-nav .nav-icons i {
+  font-size: .8rem;
+}
+
+.navbar .navbar-nav .nav-icons i.fa-phone {
+  -webkit-transform: rotate(280deg);
+          transform: rotate(280deg);
+}
+
+.search {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999999;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.search .close {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 2rem 22rem;
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
+  width: 0;
+  height: 70px;
+}
+
+#loading {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#loading .sk-chase {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  -webkit-animation: sk-chase 2.5s infinite linear both;
+          animation: sk-chase 2.5s infinite linear both;
+}
+
+#loading .sk-chase .sk-chase-dot {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-animation: sk-chase-dot 2.0s infinite ease-in-out both;
+          animation: sk-chase-dot 2.0s infinite ease-in-out both;
+}
+
+#loading .sk-chase .sk-chase-dot::before {
+  content: '';
+  display: block;
+  width: 25%;
+  height: 25%;
+  background-color: #59AA6C;
+  border-radius: 100%;
+  -webkit-animation: sk-chase-dot-before 2.0s infinite ease-in-out both;
+          animation: sk-chase-dot-before 2.0s infinite ease-in-out both;
+}
+
+#loading .sk-chase .sk-chase-dot:nth-child(1) {
+  -webkit-animation-delay: -1.1s;
+          animation-delay: -1.1s;
+}
+
+#loading .sk-chase .sk-chase-dot:nth-child(1)::before {
+  -webkit-animation-delay: -1.1s;
+          animation-delay: -1.1s;
+}
+
+#loading .sk-chase .sk-chase-dot:nth-child(2) {
+  -webkit-animation-delay: -1.0s;
+          animation-delay: -1.0s;
+}
+
+#loading .sk-chase .sk-chase-dot:nth-child(2)::before {
+  -webkit-animation-delay: -1.0s;
+          animation-delay: -1.0s;
+}
+
+#loading .sk-chase .sk-chase-dot:nth-child(3) {
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s;
+}
+
+#loading .sk-chase .sk-chase-dot:nth-child(3)::before {
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s;
+}
+
+#loading .sk-chase .sk-chase-dot:nth-child(4) {
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s;
+}
+
+#loading .sk-chase .sk-chase-dot:nth-child(4)::before {
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s;
+}
+
+#loading .sk-chase .sk-chase-dot:nth-child(5) {
+  -webkit-animation-delay: -0.7s;
+          animation-delay: -0.7s;
+}
+
+#loading .sk-chase .sk-chase-dot:nth-child(5)::before {
+  -webkit-animation-delay: -0.7s;
+          animation-delay: -0.7s;
+}
+
+#loading .sk-chase .sk-chase-dot:nth-child(6) {
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+}
+
+#loading .sk-chase .sk-chase-dot:nth-child(6)::before {
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+}
+
+@-webkit-keyframes sk-chase {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes sk-chase {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes sk-chase-dot {
+  80%, 100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes sk-chase-dot {
+  80%, 100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes sk-chase-dot-before {
+  50% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  100%, 0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes sk-chase-dot-before {
+  50% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  100%, 0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+footer {
+  background-color: #212934;
+}
+
+footer .footer-content h2 {
+  position: relative;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+footer .footer-content h2::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  background-color: #2d343f;
+  width: 100%;
+  height: 1px;
+}
+
+footer .footer-content h2.green {
+  color: #59AA6C;
+}
+
+footer .footer-content ul {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+footer .footer-content ul i {
+  color: #fff;
+}
+
+footer .form-control {
+  width: 50%;
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid #2d343f;
+  color: #fff !important;
+}
+
+footer .form-control:focus {
+  background-color: transparent;
+}
+
+footer div.btn {
+  width: 20%;
+  height: 60px;
+}
+
+footer .href {
+  display: inline-block;
+  color: #cfd6e1;
+}
+
+footer .href i {
+  width: 50px;
+  border: 1px solid #cfd6e1;
+  height: 50px;
+  font-size: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+footer .href i:hover {
+  background-color: #cfd6e1;
+  color: #000;
+}
+
+footer .after-bottom {
+  position: relative;
+}
+
+footer .after-bottom::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  background-color: #2d343f;
+  width: 100%;
+  height: 2px;
+}
+
+.custom p {
+  font-size: 1.2rem;
+}
+
+.custom p a {
+  text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+  .navbar.bg-dark {
+    display: none;
+  }
+  .navbar .navbar-brand img {
+    width: 30%;
+  }
+  footer .footer-content h2 {
+    font-size: 2.2rem;
+    color: #fff;
+  }
+  footer .form-control {
+    width: 70%;
+  }
+  footer div.btn {
+    width: 30%;
+  }
+  .search {
+    z-index: 9999999;
+  }
+  .search .close {
+    padding: 2rem 12rem;
+  }
+}
+
+@media (max-width: 768px) {
+  footer .footer-content h2 {
+    font-size: 2.1rem;
+    color: #fff;
+  }
+  footer .footer-content ul {
+    font-size: 1rem;
+  }
+  footer .form-control {
+    width: 60%;
+  }
+  footer div.btn {
+    width: 30%;
+  }
+  .custom p {
+    font-size: .9rem;
+  }
+  .search .close {
+    padding: 2rem 7rem;
+  }
+  .navbar .navbar-brand img {
+    width: 25%;
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar .navbar-brand img {
+    width: 20%;
+  }
+  .navbar .navbar-nav {
+    margin-bottom: 1rem !important;
+  }
+  .navbar .navbar-nav .nav-link {
+    font-size: .9rem;
+  }
+  .navbar .navbar-nav i.fa-search, .navbar .navbar-nav i.fa-user, .navbar .navbar-nav i.fa-cart-shopping {
+    font-size: .9rem;
+  }
+  footer .footer-content h2 {
+    font-size: 2.1rem;
+  }
+  footer .footer-content ul {
+    font-size: .9rem;
+  }
+  footer .form-control {
+    width: 70%;
+  }
+  footer .href i {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  footer .custom p {
+    font-size: .8rem;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=Style.css.map */

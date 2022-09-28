@@ -1,0 +1,748 @@
+$green-color:#59AA6C;
+$opacity-green:#A7CDB2;
+$black-color:#000;
+$white-color:#fff;
+$gold-color:#EAEA53;
+$color-links:#cfd6e1;
+$font:system-ui;
+$color-shadow: 0px 0px 13px 0 rgba(0, 0, 0, .2);
+
+*{
+  padding: 0; margin: 0;
+  outline: none;
+  list-style: none;
+}
+i{
+  &.gold{
+    color: $gold-color;
+  }
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: $green-color
+}
+::-webkit-scrollbar-track{
+  background-color: $white-color;
+}
+a{
+  text-decoration: none;
+}
+
+.owl-carousel.owl-theme.w-50.mx-auto.owl-loaded.owl-drag{
+  height: 30%;
+}
+.owl-carousel .owl-nav{
+  button{
+    position: relative;
+    &.owl-prev , &.owl-next{
+      font-size: 8rem !important;
+      font-weight: bold !important;
+      color: $opacity-green !important;
+      width: 40px;
+      height:0;
+      display: flex ;
+      justify-content: center ;
+      align-items: center ;
+      position: absolute;
+      transform: translateY(-50%);
+      top: 50%;
+      &:hover{
+        background-color: #000;
+        color: $green-color;
+      }
+    }
+    &.owl-prev{
+        left: 0;
+    }
+    &.owl-next{
+      right: 0;
+    }
+  }
+}
+
+.owl-theme{
+  height:100vh;
+  .owl-dots{
+    .owl-dot{
+      &:hover span{
+        background-color: $green-color;
+      }
+      &.active span{
+        background-color: $green-color;
+      }
+        span{
+          background-color: $opacity-green;
+          width: 40px;
+          height: 4px;
+          position: relative;
+          bottom: 50px;
+        }
+    } 
+  }
+}
+// Home
+.home{
+  .item{
+    background-color: #EFEFEF;
+    .title{
+      h1{
+        font-weight: 400;
+        color: $green-color;
+        font-size: 3.5rem;
+        b{
+          font-weight: 500;
+        }
+      }
+      h3{
+        font-size: 2.6rem;
+        font-weight: bold;
+        color: #525457;
+      }
+      p{
+        line-height: 1.5;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: $black-color;
+        a{
+          color: $green-color;
+        }
+      }
+    }
+  }
+}
+
+.box-title{
+  h1{
+    font-size: 3.5rem;
+  }
+  p{
+    font-size: 1.2rem;
+    width: 45%;
+    margin: auto;
+    font-weight: bold;
+  }
+}
+// category
+.category{
+  .category-box{
+    h5{
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+      font-size: 1.5rem;
+    }
+  }
+}
+// feature
+.feature{
+  .feature-title{
+    li{
+      font-size: 1.1rem;
+    }
+    i{
+      font-size: 1.2rem;
+      &.gold{
+        color: #EAEA53;
+      }
+    }
+    h3{
+      font-size: 1.9rem;
+    }
+    p{
+      font-size: 1.1rem;
+    }
+  }
+}
+
+// About
+.about{
+  background-color: #59AB6E;
+  .title{
+    h2{
+      font-size: 3rem;
+      font-family: $font;
+    }
+    p{
+      font-size: 1.2rem;
+    }
+  }
+}
+.services{
+  .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white-color;
+    box-shadow: $color-shadow;
+    transition: all .6s;
+    &:hover{
+      background-color: $green-color;
+    }
+    h2{
+      color: $black-color;
+      font-family: $font;
+      font-size: 1.4rem;
+    }
+    &:hover h2{
+      color: $white-color;
+    }
+    i{
+      font-size: 4rem;
+      color: $green-color;
+    }
+    &:hover i{
+      color: $white-color;
+    }
+  }
+}
+// Shop
+.shop{
+  .box{
+    h2{
+      font-family: $font;
+      font-weight: 300;
+    }
+    .dropdown{
+      .dropdown-toggle{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.5rem;
+        font-family: $font;
+        &:focus{
+          box-shadow: 0 0 0 0;
+          border:0;
+        }
+      }
+      .dropdown-menu{
+        padding: 0;
+        width: 100%;
+        a{
+          font-size: 1.1rem;
+          font-family: $font;
+        }
+      }
+    }
+  }
+  .big-box{
+    a{
+      font-size: 1.4rem;
+      color: $black-color;
+      &:hover{
+        color: $green-color;
+      }
+    }
+    select{
+
+      option{
+        font-size: 1.1rem;
+        font-family: $font;
+      }
+    }
+  }
+  .item{
+    img{
+      width: 100% !important;
+    }
+    .box-item{
+      position: relative;
+      &:hover .overviwe{
+        opacity: 1;
+      }
+      .overviwe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0,0,0,.3);
+        opacity: 0;
+        transition: all .5s;
+        ul{
+          a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i{
+              color: $white-color;
+              background-color: $green-color;
+              width: 50px;
+              height: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              &:hover{
+                color: $green-color;
+                background-color: $white-color;
+              }
+            }
+          }
+        }
+      }
+    }
+    .title-images{
+      background-color: $white-color;
+      box-shadow: $color-shadow;
+
+      h3{
+        font-size: 1.6rem;
+        font-family: $font;
+        font-weight: 300;
+      }
+      h5{
+        font-size: 1.5rem;
+        font-family: $font;
+        font-weight: 300;
+      }
+      span{
+        font-size: 2rem;
+        font-weight: 300;
+        font-family: $font;
+      }
+    }
+  }
+  .btns{
+    .btn{
+      &.active{
+        background-color: $green-color !important;
+      }
+      font-size: 1.3rem;
+      font-weight: 400;
+      background-color: $white-color;
+      box-shadow: $color-shadow;
+      font-family: $font;
+      &:hover{
+        background-color: $green-color;
+        color: $white-color;
+      }
+    }
+  }
+}
+// Brand
+.brand{
+  height: 65vh;
+  button{
+    &.owl-prev , &.owl-next{
+      &.owl-prev{
+        left: -20%;
+        font-size: 4rem !important;
+      }
+      &.owl-next{
+        right: -20%;
+        font-size: 4rem !important;
+      }
+    }
+  }
+  .box-images{
+    a{
+      &:hover img{
+        opacity: 1;
+        filter: brightness(1) saturate(100%);
+      }
+      img{
+        transition: all .1s;
+        opacity: 0.5;
+        filter: brightness(1) saturate(0);
+      }
+    }
+  }
+  .owl-theme{
+    .owl-dots{
+      .owl-dot {
+        span{
+          display: none;
+        }
+      }
+    }
+  }
+}
+.form{
+  .form-control{
+    font-family: $font;
+    font-size: 1rem;
+  }
+  .btn{
+    font-size: 1.2rem;
+    font-family: $font;
+    font-weight: 700;
+  }
+}
+@media(max-width:991px){
+  .owl-theme{
+    .owl-dots{
+      .owl-dot{
+        span{
+          bottom: 30px;
+        }
+      } 
+    }
+  }
+  .home{
+    .item{
+      .title{
+        h1{
+          font-size: 3rem;
+        }
+        h3{
+          font-size: 2.1rem;
+        }
+        p{
+          font-size: 1rem;
+          width: 75%;
+        }
+      }
+      img{
+        width: 50% !important;
+      }
+    }
+  }
+  .box-title{
+    h1{
+      font-size: 3rem;
+    }
+    p{
+      font-size: 1.2rem;
+      width: 80%;
+    }
+  }
+  .feature{
+    .feature-title{
+      li{
+        font-size: 1rem;
+      }
+      i{
+        font-size: 1rem;
+      }
+      h3{
+        font-size: 1.6rem;
+      }
+      p{
+        font-size: 1rem;
+      }
+    }
+  }
+  .services{
+    .box{
+      h2{
+        font-size: 1.2rem;
+      }
+      i{
+        font-size: 3rem;
+      }
+    }
+  }
+  .brand{
+    .box-images{
+      a{
+        img{
+          width: 80% !important;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:768px){
+  .owl-carousel .owl-nav{
+    button{
+      &.owl-prev , &.owl-next{
+        font-size: 6rem;
+      }
+    }
+  }
+  .home{
+    .item{
+      .title{
+        h3{
+          font-size: 1.7rem;
+        }
+        p{
+          font-size: .9rem;
+        }
+      }
+      img{
+        width: 60% !important;
+      }
+    }
+  }
+  .box-title{
+    h1{
+      font-size: 2.8rem;
+    }
+    p{
+      font-size: 1rem;
+    }
+  }
+  .feature{
+    .feature-title{
+      h3{
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .brand{
+    height: 65vh;
+    .box-images{
+      a{
+        img{
+          width: 90% !important;
+        }
+      }
+    }
+  }
+}
+@media(max-width:590px){
+  .home{
+    .item{
+      .title{
+        h1{
+          font-size: 2.5rem;
+        }
+        h3{
+          font-size: 1.4rem;
+        }
+        p{
+          font-size: .8rem;
+        }
+      }
+      img{
+        width: 60% !important;
+      }
+    }
+  }
+  .box-title{
+    h1{
+      font-size: 2.3rem;
+    }
+    p{
+      font-size: 1rem;
+      width: 90%;
+    }
+  }
+  .feature{
+    .feature-title{
+      li{
+        font-size: .9rem;
+      }
+      i{
+        font-size: .9rem;
+      }
+    }
+  }
+  .services{
+    .box{
+      h2{
+        font-size: 1.1rem;
+      }
+      i{
+        font-size: 2rem;
+      }
+    }
+  }
+  .brand{
+    height: 70vh;
+    .owl-theme.w-50{
+      width: 20% !important;
+      height: 250px;
+    }
+    .box-images{
+      a{
+        img{
+          width: 40% !important;
+          margin: 0 0 .9rem;
+        }
+      }
+    }
+    .owl-theme{
+      .owl-dots{
+        .owl-dot {
+          span{
+            bottom: -80px;
+          }
+        }
+      }
+    }
+    button{
+      &.owl-prev , &.owl-next{
+        &.owl-prev{
+          left: -100%;
+          font-size: 4rem !important;
+        }
+        &.owl-next{
+          right: -100%;
+          font-size: 4rem !important;
+        }
+      }
+    }
+  }
+}
+@media(max-width:450px){
+  .owl-carousel .owl-nav{
+    button{
+      &.owl-prev , &.owl-next{
+        font-size: 4rem !important;
+      }
+    }
+  }
+  .owl-theme{
+    .owl-dots{
+      .owl-dot{
+        span{
+          bottom: 50px;
+        }
+      } 
+    }
+  }
+  .home{
+    .item{
+      .title{
+        h1{
+          font-size: 2rem;
+        }
+        h3{
+          font-size: 1.1rem;
+        }
+        p{
+          font-size: .7rem;
+        }
+      }
+      img{
+        width: 50% !important;
+      }
+    }
+  }
+  .box-title{
+    h1{
+      font-size: 1.8rem;
+    }
+    p{
+      font-size: .8rem;
+      width: 100%;
+    }
+  }
+  .category{
+    .category-box{
+      h5{
+        font-size: 1.3rem;
+      }
+      img{
+        width: 60% !important;
+      }
+    }
+  }
+  .feature{
+    .feature-title{
+      i{
+        font-size: .8rem;
+      }
+      h3{
+        font-size: 1.4rem;
+      }
+      p{
+        font-size: .8rem;
+      }
+    }
+  }
+  .about{
+    .title{
+      h2{
+        font-size: 1.5rem;
+      }
+      p{
+        font-size: .9rem;
+      }
+    }
+  }
+  .services{
+    .box{
+      h2{
+        font-size: .9rem;
+      }
+      i{
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .shop{
+    .box{
+      h2{
+        font-size: 1.3rem;
+      }
+      .dropdown{
+        .dropdown-toggle{
+          font-size: 1.1rem;
+        }
+        .dropdown-menu{
+          width: 90%;
+          a{
+            font-size: .9rem;
+          }
+        }
+      }
+    }
+    .big-box{
+      a{
+        font-size: .9rem;
+      }
+      select{
+        option{
+          font-size: .9rem;
+        }
+      }
+    }
+    .item{
+      img{
+        width: 100% !important;
+      }
+      .box-item{
+        .overviwe{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          ul{
+            a{
+              i{
+                width: 50px;
+                height: 50px;
+              }
+            }
+          }
+        }
+      }
+      .title-images{
+        h3{
+          font-size: 1.2rem;
+        }
+        h5{
+          font-size: 1rem;
+        }
+        span{
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .btns{
+      .btn{
+        font-size: .8rem;
+      }
+    }
+  }
+  .form{
+    .w-75.mx-auto{
+      width: 100% !important;
+    }
+    .form-control{
+      font-family: $font;
+      font-size: .8rem;
+    }
+    .btn{
+      font-size: .8rem;
+    }
+  }
+}
